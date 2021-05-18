@@ -1,0 +1,9 @@
+---
+- name: Deploy docker img
+  hosts: all
+  remote_user:root
+  tasks:
+    - name: Pull mask_detector image
+      docker_image:
+        name: suchithkumarch/scical
+        source: pull
